@@ -1,0 +1,40 @@
+{
+    "food": {
+        "Brød & Bavinchi": {
+            "Baguette/flutes": {
+                "440065": {
+                    "name": "flutes",
+                    "weight": 300,
+                    "price": 6.50, 
+                    "nutritionValues": {
+                        "energy": 249,
+                        "fat": 1,
+                        "ofSaturatedFat": 0.3,
+                        "carbohydrate": 50,
+                        "ofSugar": 3.1,
+                        "fibre": 2.5,
+                        "protein": 8.7,
+                        "salt": 1.3
+                    }
+                }
+            },
+            "Boller": {
+                "60089": {
+                    "name": "solsikkeboller",
+                    "weight": 300,
+                    "price": 6.50, 
+                    "nutritionValues": {
+                        "energy": 249,
+                        "fat": 1,
+                        "ofSaturatedFat": 0.3,
+                        "carbohydrate": 50,
+                        "ofSugar": 3.1,
+                        "fibre": 2.5,
+                        "protein": 8.7,
+                        "salt": 1.3
+                    }
+                }
+            }
+        }
+    }
+}
