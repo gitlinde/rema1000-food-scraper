@@ -53,12 +53,6 @@ const rema100Data = {
 	}
 };
 
-const nutrionalValues = {
-
-};
-
-
-
 {(async () => {
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
@@ -89,12 +83,9 @@ const nutrionalValues = {
 		
 		for(let i = 0; i < categories.length; i++) {
 			console.log(`Selector found. Connecting to https://shop.rema1000.dk${categories[i]}`)
-			// await page.click(`a[href="${categories[i]}"]`); //page.goto
-			// await page.goto("https://shop.rema1000.dk" + categories[i])
 			await page.goto("https://shop.rema1000.dk" + categories[i], {
 				waitUntil: "networkidle2",
 			});
-			// console.log("https://shop.rema1000.dk" + categories[i])
 
 			//add baguetteflutes to the object
 			let splitUrl = page.url().split('/');
@@ -107,11 +98,9 @@ const nutrionalValues = {
 				const element = document.querySelector('[related]');
 				return element.getAttribute('related');
 			});
-			// console.log(page.url());
-			// console.log(relatedValues.split(','))
+			
 			let idArray = relatedValues.split(',')
 			for(let i = 0; i < idArray.length; ++i) {
-				// urlArray.push(convertIdToUrl(idArray[i]))
 				rema100Data[foodCategory][splitUrl][idArray[i]] = {}
 			}
 
@@ -123,23 +112,72 @@ const nutrionalValues = {
 				await page.goto(convertIdToUrl(id), {
 					waitUntil: "networkidle2",
 				});
-				// rema100Data[foodCategory][splitUrl]
 
 				console.log("\n" + "page.goto(): " + convertIdToUrl(id))
 		
 				let title = await findCSSElement('.top.wrap .header .header-left .title')
 				let subtitle = await findCSSElement('.top.wrap .header .header-left .sub')
 
-				// console.log(convertTitlesToObject(title,subtitle))
-				// title = convertTitlesToObject(title,subtitle).name
-				// subtitle = convertTitlesToObject(title,subtitle).subName
 				rema100Data[foodCategory][splitUrl][id].name = convertTitlesToObject(title,subtitle).name
 				rema100Data[foodCategory][splitUrl][id].subName = convertTitlesToObject(title,subtitle).subName
 				rema100Data[foodCategory][splitUrl][id].grams = convertTitlesToObject(title,subtitle).grams
 				console.log(rema100Data[foodCategory][splitUrl][id])
 				
 				await new Promise(resolve => setTimeout(resolve, 1000));
+				try {
+					await page.waitForSelector('.nut-line');
+					const nutritionContent = await page.evaluate(() => {
+						const elements = document.querySelectorAll('.nut-line');
+						return Array.from(elements).map(element => element.innerText);
+					});
+
+					rema100Data[foodCategory][splitUrl][id].nutrionalValues = {}
+
+					for(let i = 1; i < nutritionContent.length; i++) {
+						switch (i) {
+							case 1:
+								rema100Data[foodCategory][splitUrl][id].nutrionalValues.energy = spliceString(nutritionContent[i], 'kcal')
+								break;
+							case 2:
+								rema100Data[foodCategory][splitUrl][id].nutrionalValues.fat = nutritionContent[i].replace(/Fedt\s*/g, '')
+								break;
+							case 3:
+								rema100Data[foodCategory][splitUrl][id].nutrionalValues.ofSaturatedFat = nutritionContent[i].replace(/Heraf mættede fedtsyrer\s*/g, '')
+								break;
+							case 4:
+								rema100Data[foodCategory][splitUrl][id].nutrionalValues.carbohydrate = nutritionContent[i].replace(/Kulhydrat\s*/g, '')
+								break;
+							case 5:
+								rema100Data[foodCategory][splitUrl][id].nutrionalValues.ofSugar = nutritionContent[i].replace(/Heraf sukkerarter\s*/g, '');
+								break;
+							case 6:
+								rema100Data[foodCategory][splitUrl][id].nutrionalValues.fibre = nutritionContent[i].replace(/Kostfibre\s*/g, '');
+								break;
+							case 7:
+								rema100Data[foodCategory][splitUrl][id].nutrionalValues.protein = nutritionContent[i].replace(/Protein\s*/g, '');
+								break;
+							case 8:
+								rema100Data[foodCategory][splitUrl][id].nutrionalValues.salt = nutritionContent[i].replace(/Salt\s*/g, '');
+								break;
+							default:
+								console.log(`DEFAULT REACHED NOT SUPPOSED TO HAPPEN TA`)
+								break;
+						}
+					}
+					
+					for(let nutrition in rema100Data[foodCategory][splitUrl][id].nutrionalValues) {
+						rema100Data[foodCategory][splitUrl][id].nutrionalValues[nutrition] = rema100Data[foodCategory][splitUrl][id].nutrionalValues[nutrition]
+							.replace('< ','')
+							.replace(',', '.')
+							rema100Data[foodCategory][splitUrl][id].nutrionalValues[nutrition] = parseFloat(rema100Data[foodCategory][splitUrl][id].nutrionalValues[nutrition])
+					}
 	
+					console.log('nutritionalValues: ')
+					console.log(rema100Data[foodCategory][splitUrl][id].nutrionalValues)
+					
+				} catch (error) {
+					console.log(error)
+				}
 
 				async function findCSSElement(CSSPath) {
 					try {
@@ -156,102 +194,19 @@ const nutrionalValues = {
 						}
 					} catch (error) {
 						console.log(error)
-						// await new Promise(resolve => setTimeout(resolve, 1000))
-						// console.log(`LETS GO INFINITE LOOOP THIS: ${convertIdToUrl(id)}`)
-						// findCSSElement(CSSPath)
 						await new Promise(resolve => setTimeout(resolve, 1000))
 					}
 				}
-
-				// async function findCSSElement(CSSPath) {
-				// 	try {
-				// 		let element = await page.$(CSSPath)
-				// 		if (element) {
-				// 			let textContent = await page.evaluate(el => el.textContent, element);
-				// 			console.log("\n PRODUCT TITLE: " + textContent);
-				// 		} else {
-				// 			console.log('product not found')
-				// 		}
-				// 	} catch (error) {
-				// 		console.log('error finding product name ')
-				// 	}
-				// }
-				
 			}
-			// console.log(rema100Data)
-
 			console.log(rema100Data["Brød & Bavinchi"])
 			console.log(JSON.stringify(rema100Data["Brød & Bavinchi"]))
-			// console.log(page.url())
-			// console.log(JSON.stringify(rema100Data[foodCategory][splitUrl]))
 			await new Promise(resolve => setTimeout(resolve, 1000));
 		}
-		
-		// for(let subCategory in rema100Data[foodCategory]) {
-		// 	if(subCategory === 'link')
-		// 		continue;
-			
-		// 	// console.log(JSON.stringify(rema100Data[foodCategory][subCategory]))
-		// 	console.log(subCategory)
-		// }
-		// console.log(rema100Data)
-		// console.log(urlArray)
 	}
 
 
 
 
-	
-	
-
-
-	// console.log(JSON.stringify(categories))
-	await page.waitForSelector('.nut-line');
-	const nutritionContent = await page.evaluate(() => {
-		const elements = document.querySelectorAll('.nut-line');
-		return Array.from(elements).map(element => element.innerText);
-	});
-
-	for(let i = 1; i < nutritionContent.length; i++) {
-		switch (i) {
-			case 1:
-				nutrionalValues.energy = spliceString(nutritionContent[i], 'kcal')
-				break;
-			case 2:
-				nutrionalValues.fat = nutritionContent[i].replace(/Fedt\s*/g, '')
-				break;
-			case 3:
-				nutrionalValues.ofSaturatedFat = nutritionContent[i].replace(/Heraf mættede fedtsyrer\s*/g, '')
-				break;
-			case 4:
-				nutrionalValues.carbohydrate = nutritionContent[i].replace(/Kulhydrat\s*/g, '')
-				break;
-			case 5:
-				nutrionalValues.ofSugar = nutritionContent[i].replace(/Heraf sukkerarter\s*/g, '');
-				break;
-			case 6:
-				nutrionalValues.fibre = nutritionContent[i].replace(/Kostfibre\s*/g, '');
-				break;
-			case 7:
-				nutrionalValues.protein = nutritionContent[i].replace(/Protein\s*/g, '');
-				break;
-			case 8:
-				nutrionalValues.salt = nutritionContent[i].replace(/Salt\s*/g, '');
-				break;
-			default:
-				console.log(`DEFAULT REACHED NOT SUPPOSED TO HAPPEN TA`)
-				break;
-		}
-	}
-	
-	for(let nutrition in nutrionalValues) {
-		nutrionalValues[nutrition] = nutrionalValues[nutrition]
-			.replace('< ','')
-			.replace(',', '.')
-		nutrionalValues[nutrition] = parseFloat(nutrionalValues[nutrition])
-	}
-
-	console.log('\n' + JSON.stringify(nutrionalValues))
 
 	
 	
