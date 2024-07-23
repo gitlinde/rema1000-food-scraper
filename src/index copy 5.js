@@ -5,23 +5,23 @@ import puppeteer from "puppeteer";
 const rema100Data = {
 	"Brød & Bavinchi": {
 		link: "https://shop.rema1000.dk/brod-bavinchi",
-		// "Baguette/flutes": { 
-			// 60309: {
-			// 	name: "flutes",
-			// 	weight: 300,
-			// 	price: 6.50,
-			// 	nutritionValues: {
-			// 		energy: 249,
-			// 		fat: 1,
-			// 		ofSaturatedFat: 0.3,
-			// 		carbohydrate: 50,
-			// 		ofSugar: 3.1,
-			// 		fibre: 2.5,
-			// 		protein: 8.7,
-			// 		salt: 1.3
-			// 	}
-			// }
-		// },
+		"Baguette/flutes": { 
+			60309: {
+				name: "flutes",
+				weight: 300,
+				price: 6.50,
+				nutritionValues: {
+					energy: 249,
+					fat: 1,
+					ofSaturatedFat: 0.3,
+					carbohydrate: 50,
+					ofSugar: 3.1,
+					fibre: 2.5,
+					protein: 8.7,
+					salt: 1.3
+				}
+			}
+		},
 	},
 	"Nemt & hurtigt": {
 		link: "https://shop.rema1000.dk/nemt-hurtigt",
@@ -65,9 +65,7 @@ const nutrionalValues = {
 	// await page.goto('https://shop.rema1000.dk/brod-bavinchi', {
 	// 	waitUntil: 'networkidle2',
 	// });
-	await page.goto('https://shop.rema1000.dk', {
-		waitUntil: 'networkidle2',
-	  });
+
 	await page.click('button');
 
 
@@ -77,42 +75,8 @@ const nutrionalValues = {
 			waitUntil: 'networkidle2',
 		});
 		
-		
-
 		console.log(page.url())
 		await new Promise(resolve => setTimeout(resolve, 1000));
-
-		
-		
-
-		await page.waitForSelector('.all');
-		const categories = await page.evaluate(() => {
-			return Array.from(document.querySelectorAll('.all')).map(category => category.getAttribute('href'));
-		});
-		let urlArray = [];
-		for(let i = 0; i < categories.length; i++) {
-			await page.click(`a[href="${categories[i]}"]`); //page.goto
-			// await page.waitForSelector('[related]')	
-			// const relatedValues = await page.evaluate(() => {
-			// 	const element = document.querySelector('[related]');
-			// 	return element.getAttribute('related');
-			// });
-			console.log(page.url());
-			// console.log(relatedValues.split(','))
-			// let idArray = relatedValues.split(',')
-			// for(let i = 0; i < idArray.length; ++i) {
-			// 	urlArray.push(convertIdToUrl(idArray[i]))
-			// }
-			let splitUrl = page.url().split('/');
-			splitUrl = splitUrl[splitUrl.length-1]
-			// console.log("SPLIT: " + splitUrl[splitUrl.length-1])
-			rema100Data[foodCategory][splitUrl] = {}
-			// console.log(rema100Data[foodCategory].baguetteflutes)
-			// return;
-			await new Promise(resolve => setTimeout(resolve, 1000));
-		}
-		console.log(rema100Data)
-		// console.log(urlArray)
 	}
 	// findCSSElement('.header-left > div:nth-child(1)');
 	// findCSSElement('.header-left > .sub');
@@ -126,7 +90,29 @@ const nutrionalValues = {
 	// }
 
 
+	await page.waitForSelector('.all');
+	const categories = await page.evaluate(() => {
+		return Array.from(document.querySelectorAll('.all')).map(category => category.getAttribute('href'));
+	});
+	let urlArray = [];
+	for(let i = 0; i < categories.length; i++) {
+		await page.click(`a[href="${categories[i]}"]`); //page.goto
+		await page.waitForSelector('[related]')	
+		const relatedValues = await page.evaluate(() => {
+			const element = document.querySelector('[related]');
+			return element.getAttribute('related');
+		});
+		console.log(page.url());
+		console.log(relatedValues.split(','))
+		let idArray = relatedValues.split(',')
+		for(let i = 0; i < idArray.length; ++i) {
+			urlArray.push(convertIdToUrl(idArray[i]))
+		}
+		await new Promise(resolve => setTimeout(resolve, 1000));
+	}
 
+
+	console.log(urlArray)
 	
 	
 
