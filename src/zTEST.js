@@ -8,7 +8,6 @@ const rema100Data = {
 		// "Baguette/flutes": { 
 			// 60309: {
 			// 	name: "flutes",
-			// 	subName: "REMA 1000"
 			// 	weight: 300,
 			// 	price: 6.50,
 			// 	nutritionValues: {
@@ -117,70 +116,51 @@ const nutrionalValues = {
 
 			// rema100Data[foodCategory].link
 			console.log("\n" + splitUrl + ": " + JSON.stringify(rema100Data[foodCategory][splitUrl]))
-			for(let id in rema100Data[foodCategory][splitUrl]) {
-				
-				// await page.goto()
-				await page.goto(convertIdToUrl(id), {
-					waitUntil: "networkidle2",
-				});
-				// rema100Data[foodCategory][splitUrl]
+							
+			// await page.goto()
+			await page.goto(convertIdToUrl(66035), {
+				waitUntil: "networkidle2",
+			});
+			// rema100Data[foodCategory][splitUrl]
 
-				console.log("\n" + "page.goto(): " + convertIdToUrl(id))
-				// findCSSElement('.header .header-left .title');
-				// findCSSElement('.header .header-left .sub');
+			// console.log("\n" + "page.goto(): " + convertIdToUrl(id))
+			findCSSElement('.header .header-left .title');
+			findCSSElement('.header .header-left .sub');
+			await new Promise(resolve => setTimeout(resolve, 1000));
+			await new Promise(resolve => setTimeout(resolve, 1000));
+			// findCSSElement('.div.title:nth-child(1)')
+			// findCSSElement('.sub')
 
-				findCSSElement('.top.wrap .header .header-left .title');
-				findCSSElement('.top.wrap .header .header-left .sub');
-				await new Promise(resolve => setTimeout(resolve, 1000));
-				// findCSSElement('.div.title:nth-child(1)')
-				// findCSSElement('.sub')
-
-
-
-
-
-				async function findCSSElement(CSSPath) {
-					try {
-						await page.waitForSelector(CSSPath, { timeout: 10000 });
-						let element = await page.$(CSSPath);
-						if (element) {
-							let textContent = await page.evaluate(el => el.textContent, element);
-							console.log("\n title/sub: " + textContent);
-							return;
-						} else {
-							console.log('Product not found');
-							return;
-						}
-					} catch (error) {
-						console.log(error)
-						// await new Promise(resolve => setTimeout(resolve, 1000))
-						// console.log(`LETS GO INFINITE LOOOP THIS: ${convertIdToUrl(id)}`)
-						// findCSSElement(CSSPath)
-						await new Promise(resolve => setTimeout(resolve, 1000))
+			async function findCSSElement(CSSPath) {
+				try {
+					await page.waitForSelector(CSSPath, { timeout: 10000 });
+					let element = await page.$(CSSPath);
+					if (element) {
+						let textContent = await page.evaluate(el => el.textContent, element);
+						console.log("\n title/sub: " + textContent);
+						return;
+					} else {
+						console.log('Product not found');
+						return;
 					}
+				} catch (error) {
+					console.log(error)
+					// console.log(`LETS GO INFINITE LOOOP THIS: ${convertIdToUrl(id)}`)
+					findCSSElement(CSSPath)
 				}
-
-				// async function findCSSElement(CSSPath) {
-				// 	try {
-				// 		let element = await page.$(CSSPath)
-				// 		if (element) {
-				// 			let textContent = await page.evaluate(el => el.textContent, element);
-				// 			console.log("\n PRODUCT TITLE: " + textContent);
-				// 		} else {
-				// 			console.log('product not found')
-				// 		}
-				// 	} catch (error) {
-				// 		console.log('error finding product name ')
-				// 	}
-				// }
-				
 			}
 			
-
 			
-			// console.log(page.url())
-			// console.log(JSON.stringify(rema100Data[foodCategory][splitUrl]))
+			await page.goto(convertIdToUrl(66029), {
+				waitUntil: "networkidle2",
+			});
+			// rema100Data[foodCategory][splitUrl]
+
+			// console.log("\n" + "page.goto(): " + convertIdToUrl(id))
+			findCSSElement('.header .header-left .title');
+			findCSSElement('.header .header-left .sub');
 			await new Promise(resolve => setTimeout(resolve, 1000));
+
 		}
 		console.log(rema100Data)
 		// for(let subCategory in rema100Data[foodCategory]) {
@@ -286,72 +266,4 @@ function spliceString(inputString, stringToSplice) {
 
 function convertIdToUrl(id) {
 	return `https://shop.rema1000.dk/varer/${id}`
-}
-
-
-function convertTitlesToObject(title, subtitle) {
-	let grams = ''
-	let subtitleArray = subtitle.split('/')
-	let units = ''
-	for(let i = 0; i < subtitleArray[0].length; ++i) {
-		if (isNumber(subtitleArray[0].charAt(i)) == true || subtitleArray[0].charAt(i) == '.') {
-			grams += subtitleArray[0].charAt(i)
-		} else {
-			units += subtitleArray[0].charAt(i)
-		}
-	}
-
-	grams = parseFloat(grams)
-	switch (units.split(' ')[1]) {
-		case 'STK':
-			return 'STK, incompatible.'
-		case 'BDT':
-			return 'BDT, incompatible'
-		case 'LTR':
-			grams *= 1000
-			units = 'GR'
-			break
-		case 'KG':
-			grams *= 1000
-			units = 'GR'
-			break
-		case 'CL':
-			grams *= 10
-			units = 'GR'
-			break
-		case 'GR':
-			units = units.split(' ')[1] // same as 'GR'
-			break
-		case 'ML':
-			units = 'GR'
-			break
-		default:
-			return 'Unkown unit, incompatible'
-			break;
-	}
-
-	if(subtitle.split('/')[1]) {
-		let subSplit = subtitle.split('/')[1]
-		let name = title.toLowerCase()
-		let subName = subSplit.toLowerCase()
-		name = sanitizeKey(name)
-		subName = sanitizeKey(subName)
-		return {name, subName, grams}
-	} else {
-		let name = title.toLowerCase()
-		name = sanitizeKey(name)
-		let subName = subtitle
-		subName = sanitizeKey(subName)
-		return {name, subName, grams}
-	}
-
-	function sanitizeKey(key) {
-		const validCharacters = /^[a-zA-Z0-9_-åæøÅÆØ]*$/;
-
-		return key.split('').filter(char => validCharacters.test(char)).join('');
-	}
-
-	function isNumber(char) {
-		return !isNaN(char) && char.trim() !== '';
-	}
 }
