@@ -2,9 +2,10 @@ import puppeteer from "puppeteer";
 // await page.screenshot({
 // 	path: 'hn.png',
 // });
-const food = {
+const rema100Data = {
 	"Brød & Bavinchi": {
-		"Baguette/flutes": {
+		link: "https://shop.rema1000.dk/brod-bavinchi",
+		"Baguette/flutes": { 
 			60309: {
 				name: "flutes",
 				weight: 300,
@@ -21,22 +22,35 @@ const food = {
 				}
 			}
 		},
+	},
+	"Nemt & hurtigt": {
+		link: "https://shop.rema1000.dk/nemt-hurtigt",
+	},
+	"Kød, fisk & fjerkræ": {
+		link: "https://shop.rema1000.dk/kod-fisk-fjerkrae",
+	},
+	"Køl": {
+		link: "https://shop.rema1000.dk/kol",
+	},
+	"Ost m.v.": {
+		link: "https://shop.rema1000.dk/ost-mv",
+	},
+	"Frost": {
+		link: "https://shop.rema1000.dk/frost",
+	},
+	"Mejeri": {
+		link: "https://shop.rema1000.dk/mejeri",
+	},
+	"Kolonial": {
+		link: "https://shop.rema1000.dk/kolonial",
+	},
+	"Drikkevarer": {
+		link: "https://shop.rema1000.dk/drikkevarer"
+	},
+	"Slik": {
+		link: "https://shop.rema1000.dk/slik"
 	}
 };
-
-
-const manuallyAddedCategories = [
-	'https://shop.rema1000.dk/brod-bavinchi',
-	'https://shop.rema1000.dk/nemt-hurtigt',
-	'https://shop.rema1000.dk/kod-fisk-fjerkrae',
-	'https://shop.rema1000.dk/kol',
-	'https://shop.rema1000.dk/ost-mv',
-	'https://shop.rema1000.dk/frost',
-	'https://shop.rema1000.dk/mejeri',
-	'https://shop.rema1000.dk/kolonial',
-	'https://shop.rema1000.dk/drikkevarer',
-	'https://shop.rema1000.dk/slik'
-]
 
 const nutrionalValues = {
 
@@ -48,16 +62,22 @@ const nutrionalValues = {
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
 	// https://shop.rema1000.dk/varer/21896
-	await page.goto('https://shop.rema1000.dk/brod-bavinchi', {
-		waitUntil: 'networkidle2',
-	});
-
-
-
+	// await page.goto('https://shop.rema1000.dk/brod-bavinchi', {
+	// 	waitUntil: 'networkidle2',
+	// });
 
 	await page.click('button');
 
 
+	for(let foodCategory in rema100Data) {
+		// console.log(foodCategory + " " + rema100Data[foodCategory].link)
+		await page.goto(rema100Data[foodCategory].link, {
+			waitUntil: 'networkidle2',
+		});
+		
+		console.log(page.url())
+		await new Promise(resolve => setTimeout(resolve, 1000));
+	}
 	// findCSSElement('.header-left > div:nth-child(1)');
 	// findCSSElement('.header-left > .sub');
 
@@ -76,7 +96,7 @@ const nutrionalValues = {
 	});
 	let urlArray = [];
 	for(let i = 0; i < categories.length; i++) {
-		await page.click(`a[href="${categories[i]}"]`);
+		await page.click(`a[href="${categories[i]}"]`); //page.goto
 		await page.waitForSelector('[related]')	
 		const relatedValues = await page.evaluate(() => {
 			const element = document.querySelector('[related]');
@@ -183,5 +203,3 @@ function spliceString(inputString, stringToSplice) {
 function convertIdToUrl(id) {
 	return `https://shop.rema1000.dk/varer/${id}`
 }
-
-
