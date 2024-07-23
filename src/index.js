@@ -89,29 +89,53 @@ const nutrionalValues = {
 		const categories = await page.evaluate(() => {
 			return Array.from(document.querySelectorAll('.all')).map(category => category.getAttribute('href'));
 		});
-		let urlArray = [];
+		// let urlArray = [];
 		for(let i = 0; i < categories.length; i++) {
-			await page.click(`a[href="${categories[i]}"]`); //page.goto
-			// await page.waitForSelector('[related]')	
-			// const relatedValues = await page.evaluate(() => {
-			// 	const element = document.querySelector('[related]');
-			// 	return element.getAttribute('related');
-			// });
-			console.log(page.url());
-			// console.log(relatedValues.split(','))
-			// let idArray = relatedValues.split(',')
-			// for(let i = 0; i < idArray.length; ++i) {
-			// 	urlArray.push(convertIdToUrl(idArray[i]))
-			// }
+			// await page.click(`a[href="${categories[i]}"]`); //page.goto
+			await page.goto("https://shop.rema1000.dk" + categories[i])
+			// console.log("https://shop.rema1000.dk" + categories[i])
+
+			//add baguetteflutes to the object
 			let splitUrl = page.url().split('/');
 			splitUrl = splitUrl[splitUrl.length-1]
-			// console.log("SPLIT: " + splitUrl[splitUrl.length-1])
 			rema100Data[foodCategory][splitUrl] = {}
-			// console.log(rema100Data[foodCategory].baguetteflutes)
-			// return;
+
+
+			await page.waitForSelector('[related]')	
+			const relatedValues = await page.evaluate(() => {
+				const element = document.querySelector('[related]');
+				return element.getAttribute('related');
+			});
+			// console.log(page.url());
+			// console.log(relatedValues.split(','))
+			let idArray = relatedValues.split(',')
+			for(let i = 0; i < idArray.length; ++i) {
+				// urlArray.push(convertIdToUrl(idArray[i]))
+				rema100Data[foodCategory][splitUrl][idArray[i]] = {}
+			}
+
+			// rema100Data[foodCategory].link
+			console.log("\n" + splitUrl + ": " + JSON.stringify(rema100Data[foodCategory][splitUrl]))
+			for(let id in rema100Data[foodCategory][splitUrl]) {
+				console.log("\n" + convertIdToUrl(id))
+				// rema100Data[foodCategory][splitUrl]
+			}
+			
+
+			
+			// console.log(page.url())
+			// console.log(JSON.stringify(rema100Data[foodCategory][splitUrl]))
 			await new Promise(resolve => setTimeout(resolve, 1000));
 		}
 		console.log(rema100Data)
+		// for(let subCategory in rema100Data[foodCategory]) {
+		// 	if(subCategory === 'link')
+		// 		continue;
+			
+		// 	// console.log(JSON.stringify(rema100Data[foodCategory][subCategory]))
+		// 	console.log(subCategory)
+		// }
+		// console.log(rema100Data)
 		// console.log(urlArray)
 	}
 	// findCSSElement('.header-left > div:nth-child(1)');
