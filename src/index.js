@@ -56,6 +56,7 @@ const rema100Data = {
 };
 
 {(async () => {
+	page.setDefaultTimeout(3000);
 	const browser = await puppeteer.launch();
 	const page = await browser.newPage();
 	// https://shop.rema1000.dk/varer/21896
@@ -118,9 +119,17 @@ const rema100Data = {
 
 				console.log("\n" + "page.goto(): " + convertIdToUrl(id))
 
-				let price = await findCSSElement('.price ._38hRkz1ofKt4-Y4OFCHnmh')
-				// console.log('PRICE: '  + price)
+		
 
+			
+				
+				try {
+					let price = await findCSSElement('.price ._38hRkz1ofKt4-Y4OFCHnmh')
+					rema100Data[foodCategory][splitUrl][id].price = periodBeforeSecondLast(price)
+				} catch (error) {
+					console.log(error)
+				}
+				
 				function periodBeforeSecondLast(number) {
 					let numberStr = number.toString();
 			
@@ -130,19 +139,20 @@ const rema100Data = {
 	
 					return parseFloat(result);
 				}
-				
-
-				rema100Data[foodCategory][splitUrl][id].price = periodBeforeSecondLast(price)
-
-				let title = await findCSSElement('.top.wrap .header .header-left .title')
-				let subtitle = await findCSSElement('.top.wrap .header .header-left .sub')
-
-				rema100Data[foodCategory][splitUrl][id].name = convertTitlesToObject(title,subtitle).name
-				rema100Data[foodCategory][splitUrl][id].subName = convertTitlesToObject(title,subtitle).subName
-				rema100Data[foodCategory][splitUrl][id].grams = convertTitlesToObject(title,subtitle).grams
-				console.log(rema100Data[foodCategory][splitUrl][id])
-				
-				await new Promise(resolve => setTimeout(resolve, 1000));
+				try {
+					let title = await findCSSElement('.top.wrap .header .header-left .title')
+					let subtitle = await findCSSElement('.top.wrap .header .header-left .sub')
+	
+					rema100Data[foodCategory][splitUrl][id].name = convertTitlesToObject(title,subtitle).name
+					rema100Data[foodCategory][splitUrl][id].subName = convertTitlesToObject(title,subtitle).subName
+					rema100Data[foodCategory][splitUrl][id].grams = convertTitlesToObject(title,subtitle).grams
+					console.log(rema100Data[foodCategory][splitUrl][id])
+					
+					await new Promise(resolve => setTimeout(resolve, 1000));
+				} catch (error) {
+					console.log(error)
+				}
+			
 				
 				// const nutritionContent = await page.evaluate(() => {
 				// 	const elements = document.querySelectorAll('.nut-line');
@@ -233,6 +243,13 @@ const rema100Data = {
 			// console.log(JSON.stringify(rema100Data["Brød & Bavinchi"]))
 			await new Promise(resolve => setTimeout(resolve, 1000));
 		}
+		fs.writeFile(`./REMA1000 ${foodCategory}.JSON`, JSON.stringify(rema100Data), err => {
+			if(err) {
+				console.log(err)
+			} else {
+				console.log('FILE WRITTEN OVER YEP')
+			}
+		})
 	}
 	console.log(JSON.stringify(rema100Data))
 	fs.writeFile('./REMA1000.JSON', JSON.stringify(rema100Data), err => {

@@ -1,0 +1,1622 @@
+{
+    "Brød & Bavinchi": {
+        "link": "https://shop.rema1000.dk/brod-bavinchi",
+        "baguetteflutes": {
+            "60203": {
+                "price": 12,
+                "name": "fuldkornsflutes",
+                "subName": "rema1000",
+                "grams": 300,
+                "nutrionalValues": {
+                    "energy": 227,
+                    "fat": 1.5,
+                    "ofSaturatedFat": 0.3,
+                    "carbohydrate": 40,
+                    "ofSugar": 3.1,
+                    "fibre": 7,
+                    "protein": 9.8,
+                    "salt": 0.83
+                }
+            },
+            "60308": {
+                "price": 6.95,
+                "name": "ciabatta",
+                "subName": "rema1000",
+                "grams": 300,
+                "nutrionalValues": {
+                    "energy": 257,
+                    "fat": 2.3,
+                    "ofSaturatedFat": 0.3,
+                    "carbohydrate": 47,
+                    "ofSugar": 2.2,
+                    "fibre": 2.9,
+                    "protein": 8.4,
+                    "salt": 1.4
+                }
+            },
+            "60309": {
+                "price": 6.5,
+                "name": "flutes",
+                "subName": "rema1000",
+                "grams": 300,
+                "nutrionalValues": {
+                    "energy": 249,
+                    "fat": 1,
+                    "ofSaturatedFat": 0.3,
+                    "carbohydrate": 50,
+                    "ofSugar": 3.1,
+                    "fibre": 2.5,
+                    "protein": 8.7,
+                    "salt": 1.3
+                }
+            },
+            "360871": {
+                "price": 14,
+                "nutrionalValues": {
+                    "energy": 238,
+                    "fat": 1.1,
+                    "ofSaturatedFat": 0.4,
+                    "carbohydrate": 47,
+                    "ofSugar": 0.9,
+                    "fibre": 2.5,
+                    "protein": 8.3,
+                    "salt": 1.4
+                }
+            },
+            "360872": {
+                "price": 14,
+                "nutrionalValues": {
+                    "energy": 238,
+                    "fat": 1.1,
+                    "ofSaturatedFat": 0.4,
+                    "carbohydrate": 47,
+                    "ofSugar": 0.9,
+                    "fibre": 2.5,
+                    "protein": 8.3,
+                    "salt": 1.4
+                }
+            }
+        },
+        "boller": {
+            "60009": {
+                "price": 12,
+                "name": "yoghurtboller",
+                "subName": "schulstad",
+                "grams": 500,
+                "nutrionalValues": {
+                    "energy": 250,
+                    "fat": 3.1,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 43,
+                    "ofSugar": 4.9,
+                    "fibre": 6.4,
+                    "protein": 9.4,
+                    "salt": 1
+                }
+            },
+            "60055": {
+                "price": 25.95,
+                "name": "limpan",
+                "subName": "pågen",
+                "grams": 900,
+                "nutrionalValues": {
+                    "energy": 275,
+                    "fat": 1.9,
+                    "ofSaturatedFat": 0.7,
+                    "carbohydrate": 52,
+                    "ofSugar": 11,
+                    "fibre": 3.8,
+                    "protein": 9.6,
+                    "salt": 0.9
+                }
+            },
+            "60080": {
+                "price": 25,
+                "name": "chiaboller",
+                "subName": "levebrød",
+                "grams": 520,
+                "nutrionalValues": {
+                    "energy": 245,
+                    "fat": 3.1,
+                    "ofSaturatedFat": 0.5,
+                    "carbohydrate": 40,
+                    "ofSugar": 5,
+                    "fibre": 8.4,
+                    "protein": 10,
+                    "salt": 0.94
+                }
+            },
+            "60089": {
+                "price": 25.5,
+                "name": "solsikkeboller",
+                "subName": "detgode",
+                "grams": 500,
+                "nutrionalValues": {
+                    "energy": 294,
+                    "fat": 8.5,
+                    "ofSaturatedFat": 1.2,
+                    "carbohydrate": 43,
+                    "ofSugar": 6.8,
+                    "fibre": 3.3,
+                    "protein": 9.7,
+                    "salt": 0.88
+                }
+            },
+            "60099": {
+                "price": 23.95,
+                "name": "solstykker",
+                "subName": "pågen",
+                "grams": 360,
+                "nutrionalValues": {
+                    "energy": 255,
+                    "fat": 5,
+                    "ofSaturatedFat": 0.7,
+                    "carbohydrate": 37,
+                    "ofSugar": 2.5,
+                    "fibre": 8,
+                    "protein": 11,
+                    "salt": 0.8
+                }
+            },
+            "60106": {
+                "price": 22.75,
+                "name": "solskinsboller",
+                "subName": "kohberg",
+                "grams": 390,
+                "nutrionalValues": {
+                    "energy": 291,
+                    "fat": 8.5,
+                    "ofSaturatedFat": 2.2,
+                    "carbohydrate": 41,
+                    "ofSugar": 5.7,
+                    "fibre": 4.1,
+                    "protein": 9.9,
+                    "salt": 1
+                }
+            },
+            "60121": {
+                "price": 10.5,
+                "name": "krydderboller",
+                "subName": "rema1000fuldk",
+                "grams": 410,
+                "nutrionalValues": {
+                    "energy": 246,
+                    "fat": 3.3,
+                    "ofSaturatedFat": 0.6,
+                    "carbohydrate": 41,
+                    "ofSugar": 5,
+                    "fibre": 6,
+                    "protein": 10,
+                    "salt": 1
+                }
+            },
+            "60122": {
+                "price": 8.5,
+                "name": "krydderboller",
+                "subName": "rema1000",
+                "grams": 350,
+                "nutrionalValues": {
+                    "energy": 264,
+                    "fat": 3.3,
+                    "ofSaturatedFat": 0.7,
+                    "carbohydrate": 1.3,
+                    "ofSugar": 7.8,
+                    "fibre": 3.1,
+                    "protein": 9,
+                    "salt": 0.83
+                }
+            },
+            "60741": {
+                "price": 19.5,
+                "name": "proteinboller",
+                "subName": "kohberg",
+                "grams": 450,
+                "nutrionalValues": {
+                    "energy": 248,
+                    "fat": 6.7,
+                    "ofSaturatedFat": 1.2,
+                    "carbohydrate": 27,
+                    "ofSugar": 2.3,
+                    "fibre": 9.1,
+                    "protein": 15,
+                    "salt": 0.98
+                }
+            },
+            "61208": {
+                "price": 14.5,
+                "name": "ciabattastykker",
+                "subName": "rema1000",
+                "grams": 420,
+                "nutrionalValues": {
+                    "energy": 244,
+                    "fat": 1.6,
+                    "ofSaturatedFat": 0.3,
+                    "carbohydrate": 47,
+                    "ofSugar": 1.7,
+                    "fibre": 2.5,
+                    "protein": 9.1,
+                    "salt": 1.1
+                }
+            },
+            "61243": {
+                "price": 10,
+                "name": "boller",
+                "subName": "gramslot",
+                "grams": 250,
+                "nutrionalValues": {
+                    "energy": 275,
+                    "fat": 3.7,
+                    "ofSaturatedFat": 0.3,
+                    "carbohydrate": 51,
+                    "ofSugar": 5.2,
+                    "fibre": 2.8,
+                    "protein": 8,
+                    "salt": 1.5
+                }
+            },
+            "61541": {
+                "price": 25,
+                "name": "multikerneboller",
+                "subName": "levebrød",
+                "grams": 550,
+                "nutrionalValues": {
+                    "energy": 229,
+                    "fat": 2,
+                    "ofSaturatedFat": 0.9,
+                    "carbohydrate": 39,
+                    "ofSugar": 5,
+                    "fibre": 8.1,
+                    "protein": 9.7,
+                    "salt": 0.96
+                }
+            },
+            "63642": {
+                "price": 23.95,
+                "name": "fuldkornsklemmer",
+                "subName": "pågen",
+                "grams": 420,
+                "nutrionalValues": {
+                    "energy": 286,
+                    "fat": 6.5,
+                    "ofSaturatedFat": 0.9,
+                    "carbohydrate": 43,
+                    "ofSugar": 3.5,
+                    "fibre": 6.5,
+                    "protein": 10,
+                    "salt": 0.8
+                }
+            },
+            "63655": {
+                "price": 23.95,
+                "name": "frokoststykker",
+                "subName": "pågen",
+                "grams": 400,
+                "nutrionalValues": {
+                    "energy": 296,
+                    "fat": 4.5,
+                    "ofSaturatedFat": 0.5,
+                    "carbohydrate": 52,
+                    "ofSugar": 7.9,
+                    "fibre": 3.3,
+                    "protein": 9.1,
+                    "salt": 0.75
+                }
+            },
+            "63861": {
+                "price": 23.95,
+                "name": "rugbrødsboller",
+                "subName": "kohberg",
+                "grams": 500,
+                "nutrionalValues": {
+                    "energy": 246,
+                    "fat": 1.7,
+                    "ofSaturatedFat": 0.7,
+                    "carbohydrate": 42,
+                    "ofSugar": 4.8,
+                    "fibre": 6.6,
+                    "protein": 11,
+                    "salt": 1.2
+                }
+            },
+            "64746": {
+                "price": 25,
+                "name": "fuldkornsboller",
+                "subName": "levebrød",
+                "grams": 470,
+                "nutrionalValues": {
+                    "energy": 235,
+                    "fat": 2.3,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 40,
+                    "ofSugar": 5,
+                    "fibre": 7.6,
+                    "protein": 9.8,
+                    "salt": 1
+                }
+            }
+        },
+        "brod": {
+            "60112": {
+                "price": 6.5,
+                "name": "hvedetoast",
+                "subName": "rema1000",
+                "grams": 375,
+                "nutrionalValues": {
+                    "energy": 257,
+                    "fat": 3.1,
+                    "ofSaturatedFat": 0.7,
+                    "carbohydrate": 48,
+                    "ofSugar": 4.8,
+                    "fibre": 3.7,
+                    "protein": 7.4,
+                    "salt": 1
+                }
+            },
+            "60113": {
+                "price": 7.5,
+                "name": "fuldkornstoast",
+                "subName": "rema1000",
+                "grams": 375,
+                "nutrionalValues": {
+                    "energy": 251,
+                    "fat": 3.3,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 45,
+                    "ofSugar": 4.7,
+                    "fibre": 5.5,
+                    "protein": 7.4,
+                    "salt": 0.99
+                }
+            },
+            "60114": {
+                "price": 8.75,
+                "name": "hvedesandwich",
+                "subName": "rema1000",
+                "grams": 500,
+                "nutrionalValues": {
+                    "energy": 249,
+                    "fat": 2.2,
+                    "ofSaturatedFat": 0.7,
+                    "carbohydrate": 48,
+                    "ofSugar": 4.9,
+                    "fibre": 3.2,
+                    "protein": 7.6,
+                    "salt": 1.1
+                }
+            },
+            "60115": {
+                "price": 9.5,
+                "name": "fuldkornssandwich",
+                "subName": "rema1000",
+                "grams": 500,
+                "nutrionalValues": {
+                    "energy": 239,
+                    "fat": 3,
+                    "ofSaturatedFat": 0.7,
+                    "carbohydrate": 41,
+                    "ofSugar": 4.9,
+                    "fibre": 7.9,
+                    "protein": 8.1,
+                    "salt": 0.96
+                }
+            },
+            "60640": {
+                "price": 21.95,
+                "name": "grovcafesandwich",
+                "subName": "kohberg",
+                "grams": 400,
+                "nutrionalValues": {
+                    "energy": 313,
+                    "fat": 12,
+                    "ofSaturatedFat": 1.1,
+                    "carbohydrate": 39,
+                    "ofSugar": 5.8,
+                    "fibre": 4.5,
+                    "protein": 11,
+                    "salt": 1.5
+                }
+            },
+            "61240": {
+                "price": 6.95,
+                "name": "bondebrød",
+                "subName": "rema1000",
+                "grams": 400,
+                "nutrionalValues": {
+                    "energy": 218,
+                    "fat": 1.5,
+                    "ofSaturatedFat": 0.2,
+                    "carbohydrate": 43,
+                    "ofSugar": 2,
+                    "fibre": 3.7,
+                    "protein": 6.2,
+                    "salt": 1.2
+                }
+            },
+            "61542": {
+                "price": 25,
+                "name": "multiksandwich",
+                "subName": "levebrød",
+                "grams": 800,
+                "nutrionalValues": {
+                    "energy": 224,
+                    "fat": 2,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 38,
+                    "ofSugar": 5,
+                    "fibre": 8.1,
+                    "protein": 9.4,
+                    "salt": 1
+                }
+            },
+            "62632": {
+                "price": 12,
+                "name": "sødmælksbrød",
+                "subName": "schulstad",
+                "grams": 600,
+                "nutrionalValues": {
+                    "energy": 248,
+                    "fat": 2.2,
+                    "ofSaturatedFat": 1.2,
+                    "carbohydrate": 47,
+                    "ofSugar": 4.3,
+                    "fibre": 3.3,
+                    "protein": 8.4,
+                    "salt": 1.2
+                }
+            },
+            "63139": {
+                "price": 25.5,
+                "name": "skagensbrød",
+                "subName": "detgode",
+                "grams": 650,
+                "nutrionalValues": {
+                    "energy": 251,
+                    "fat": 3.8,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 44,
+                    "ofSugar": 3.3,
+                    "fibre": 2.9,
+                    "protein": 8.8,
+                    "salt": 1.2
+                }
+            },
+            "63143": {
+                "price": 25.5,
+                "name": "femkornsbrød",
+                "subName": "detgode",
+                "grams": 625,
+                "nutrionalValues": {
+                    "energy": 252,
+                    "fat": 4.4,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 42,
+                    "ofSugar": 4.2,
+                    "fibre": 5.3,
+                    "protein": 8.5,
+                    "salt": 1.1
+                }
+            },
+            "63644": {
+                "price": 23.95,
+                "name": "bondebrød",
+                "subName": "pågen",
+                "grams": 500,
+                "nutrionalValues": {
+                    "energy": 260,
+                    "fat": 3.5,
+                    "ofSaturatedFat": 0.4,
+                    "carbohydrate": 46,
+                    "ofSugar": 9,
+                    "fibre": 6.5,
+                    "protein": 8.5,
+                    "salt": 0.7
+                }
+            }
+        },
+        "rugbrod": {
+            "60033": {
+                "price": 18.2,
+                "name": "solsikke",
+                "subName": "kohberg",
+                "grams": 750,
+                "nutrionalValues": {
+                    "energy": 243,
+                    "fat": 7,
+                    "ofSaturatedFat": 0.7,
+                    "carbohydrate": 34,
+                    "ofSugar": 2.4,
+                    "fibre": 7.4,
+                    "protein": 7,
+                    "salt": 1.2
+                }
+            },
+            "60117": {
+                "price": 9.75,
+                "name": "hørfrørugbrød",
+                "subName": "rema1000",
+                "grams": 500,
+                "nutrionalValues": {
+                    "energy": 246,
+                    "fat": 7,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 34,
+                    "ofSugar": 2.3,
+                    "fibre": 8.1,
+                    "protein": 7.8,
+                    "salt": 1.2
+                }
+            },
+            "60132": {
+                "price": 14.95,
+                "name": "signaturbrød",
+                "subName": "gillelejehavn",
+                "grams": 375,
+                "nutrionalValues": {
+                    "energy": 214,
+                    "fat": 4.7,
+                    "ofSaturatedFat": 0.6,
+                    "carbohydrate": 32,
+                    "ofSugar": 2,
+                    "fibre": 9,
+                    "protein": 6.4,
+                    "salt": 1.6
+                }
+            },
+            "60136": {
+                "price": 12,
+                "name": "økosolsikke",
+                "subName": "kornkammeret",
+                "grams": 700,
+                "nutrionalValues": {
+                    "energy": 232,
+                    "fat": 8,
+                    "ofSaturatedFat": 1,
+                    "carbohydrate": 29,
+                    "ofSugar": 2,
+                    "fibre": 9.6,
+                    "protein": 6.3,
+                    "salt": 1.4
+                }
+            },
+            "60138": {
+                "price": 12,
+                "name": "økokernefryd",
+                "subName": "kornkammeret",
+                "grams": 700,
+                "nutrionalValues": {
+                    "energy": 218,
+                    "fat": 4,
+                    "ofSaturatedFat": 0.4,
+                    "carbohydrate": 35,
+                    "ofSugar": 2.2,
+                    "fibre": 10,
+                    "protein": 5.7,
+                    "salt": 1.2
+                }
+            },
+            "60508": {
+                "price": 13.25,
+                "name": "skovmandsbrød",
+                "subName": "schulstad",
+                "grams": 500,
+                "nutrionalValues": {
+                    "energy": 204,
+                    "fat": 1.7,
+                    "ofSaturatedFat": 0.2,
+                    "carbohydrate": 37,
+                    "ofSugar": 2,
+                    "fibre": 9.5,
+                    "protein": 5.4,
+                    "salt": 1.2
+                }
+            },
+            "60601": {
+                "price": 25.5,
+                "name": "gulerodsrugbrød",
+                "subName": "detgode",
+                "grams": 925,
+                "nutrionalValues": {
+                    "energy": 206,
+                    "fat": 3.4,
+                    "ofSaturatedFat": 0.4,
+                    "carbohydrate": 34,
+                    "ofSugar": 2.6,
+                    "fibre": 8.4,
+                    "protein": 5.6,
+                    "salt": 1.1
+                }
+            },
+            "60650": {
+                "price": 22,
+                "name": "balancebrød",
+                "subName": "kohberg",
+                "grams": 675,
+                "nutrionalValues": {
+                    "energy": 214,
+                    "fat": 3.4,
+                    "ofSaturatedFat": 0.5,
+                    "carbohydrate": 29,
+                    "ofSugar": 1.9,
+                    "fibre": 9.8,
+                    "protein": 12,
+                    "salt": 1.1
+                }
+            },
+            "60738": {
+                "price": 25.95,
+                "name": "proteinbrød",
+                "subName": "kohberg",
+                "grams": 600,
+                "nutrionalValues": {
+                    "energy": 228,
+                    "fat": 5.4,
+                    "ofSaturatedFat": 0.9,
+                    "carbohydrate": 23,
+                    "ofSugar": 2,
+                    "fibre": 7.8,
+                    "protein": 17,
+                    "salt": 1
+                }
+            },
+            "60744": {
+                "price": 21.95,
+                "name": "herkules",
+                "subName": "kohberg",
+                "grams": 1000,
+                "nutrionalValues": {
+                    "energy": 203,
+                    "fat": 1.4,
+                    "ofSaturatedFat": 0.2,
+                    "carbohydrate": 37,
+                    "ofSugar": 2.2,
+                    "fibre": 8.6,
+                    "protein": 5.6,
+                    "salt": 1.2
+                }
+            },
+            "61114": {
+                "price": 9.75,
+                "name": "solsikkerugbrød",
+                "subName": "rema1000økologisk",
+                "grams": 600,
+                "nutrionalValues": {
+                    "energy": 242,
+                    "fat": 6.8,
+                    "ofSaturatedFat": 0.9,
+                    "carbohydrate": 34,
+                    "ofSugar": 3.2,
+                    "fibre": 7.8,
+                    "protein": 7.2,
+                    "salt": 1.1
+                }
+            },
+            "61117": {
+                "price": 20.95,
+                "name": "rugbrød",
+                "subName": "bagerensbedste",
+                "grams": 600,
+                "nutrionalValues": {
+                    "energy": 281,
+                    "fat": 13,
+                    "ofSaturatedFat": 1.5,
+                    "carbohydrate": 27,
+                    "ofSugar": 2.3,
+                    "fibre": 7.6,
+                    "protein": 12,
+                    "salt": 1.4
+                }
+            },
+            "61200": {
+                "price": 8.5,
+                "name": "schwarzbrød",
+                "subName": "rema1000",
+                "grams": 500,
+                "nutrionalValues": {
+                    "energy": 192,
+                    "fat": 1.6,
+                    "ofSaturatedFat": 0.2,
+                    "carbohydrate": 35,
+                    "ofSugar": 1.2,
+                    "fibre": 8.1,
+                    "protein": 5.2,
+                    "salt": 1.2
+                }
+            },
+            "61201": {
+                "price": 8.95,
+                "name": "solsikkerugbrød",
+                "subName": "rema1000",
+                "grams": 500,
+                "nutrionalValues": {
+                    "energy": 227,
+                    "fat": 7,
+                    "ofSaturatedFat": 0.9,
+                    "carbohydrate": 30,
+                    "ofSugar": 2,
+                    "fibre": 8.5,
+                    "protein": 6.8,
+                    "salt": 1.2
+                }
+            },
+            "61205": {
+                "price": 7.75,
+                "name": "fuldkrugbrød",
+                "subName": "rema1000",
+                "grams": 500,
+                "nutrionalValues": {
+                    "energy": 196,
+                    "fat": 1.4,
+                    "ofSaturatedFat": 0.2,
+                    "carbohydrate": 36,
+                    "ofSugar": 1.9,
+                    "fibre": 8.3,
+                    "protein": 5.7,
+                    "salt": 1
+                }
+            },
+            "61206": {
+                "price": 5.75,
+                "name": "mørktrugbrød",
+                "subName": "rema1000",
+                "grams": 500,
+                "nutrionalValues": {
+                    "energy": 195,
+                    "fat": 0.8,
+                    "ofSaturatedFat": 0.2,
+                    "carbohydrate": 37,
+                    "ofSugar": 2.9,
+                    "fibre": 8.7,
+                    "protein": 5.6,
+                    "salt": 1.1
+                }
+            },
+            "61210": {
+                "price": 18,
+                "name": "softkernerugbrød",
+                "subName": "rema1000",
+                "grams": 1000,
+                "nutrionalValues": {
+                    "energy": 216,
+                    "fat": 4.2,
+                    "ofSaturatedFat": 0.5,
+                    "carbohydrate": 35,
+                    "ofSugar": 2.2,
+                    "fibre": 7.5,
+                    "protein": 5.8,
+                    "salt": 1.2
+                }
+            },
+            "61211": {
+                "price": 17.75,
+                "name": "groftrugbrød",
+                "subName": "rema1000",
+                "grams": 1000,
+                "nutrionalValues": {
+                    "energy": 192,
+                    "fat": 1.6,
+                    "ofSaturatedFat": 0.2,
+                    "carbohydrate": 35,
+                    "ofSugar": 1.2,
+                    "fibre": 8.1,
+                    "protein": 5.2,
+                    "salt": 1.2
+                }
+            },
+            "61242": {
+                "price": 10,
+                "name": "fuldkrugbrød",
+                "subName": "gramslot",
+                "grams": 600,
+                "nutrionalValues": {
+                    "energy": 217,
+                    "fat": 2.8,
+                    "ofSaturatedFat": 0.4,
+                    "carbohydrate": 37,
+                    "ofSugar": 3.7,
+                    "fibre": 8.3,
+                    "protein": 6.8,
+                    "salt": 1.2
+                }
+            },
+            "61505": {
+                "price": 13.25,
+                "name": "solsikkerugbrød",
+                "subName": "detgode",
+                "grams": 475,
+                "nutrionalValues": {
+                    "energy": 234,
+                    "fat": 7.1,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 32,
+                    "ofSugar": 2,
+                    "fibre": 8,
+                    "protein": 6.5,
+                    "salt": 1.1
+                }
+            },
+            "61508": {
+                "price": 25.5,
+                "name": "solsikkerugbrød",
+                "subName": "detgode",
+                "grams": 950,
+                "nutrionalValues": {
+                    "energy": 234,
+                    "fat": 7.1,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 32,
+                    "ofSugar": 2,
+                    "fibre": 8,
+                    "protein": 0.5,
+                    "salt": 1.1
+                }
+            },
+            "61523": {
+                "price": 25,
+                "name": "kernegrovbrød",
+                "subName": "levebrød",
+                "grams": 950,
+                "nutrionalValues": {
+                    "energy": 205,
+                    "fat": 1.6,
+                    "ofSaturatedFat": 0.2,
+                    "carbohydrate": 38,
+                    "ofSugar": 2,
+                    "fibre": 9.1,
+                    "protein": 5.2,
+                    "salt": 1.2
+                }
+            },
+            "61526": {
+                "price": 25,
+                "name": "lbmørkkerneglød",
+                "subName": "schulstad",
+                "grams": 900,
+                "nutrionalValues": {
+                    "energy": 214,
+                    "fat": 2.8,
+                    "ofSaturatedFat": 0.3,
+                    "carbohydrate": 36,
+                    "ofSugar": 3.1,
+                    "fibre": 11,
+                    "protein": 5.4,
+                    "salt": 1.1
+                }
+            },
+            "61534": {
+                "price": 25,
+                "name": "sandwichrugbrød",
+                "subName": "levebrød",
+                "grams": 810,
+                "nutrionalValues": {
+                    "energy": 240,
+                    "fat": 2.5,
+                    "ofSaturatedFat": 0.7,
+                    "carbohydrate": 39,
+                    "ofSugar": 3.9,
+                    "fibre": 8.7,
+                    "protein": 11,
+                    "salt": 1.1
+                }
+            },
+            "61560": {
+                "price": 13.25,
+                "name": "kernegrov",
+                "subName": "levebrød",
+                "grams": 475,
+                "nutrionalValues": {
+                    "energy": 205,
+                    "fat": 1.6,
+                    "ofSaturatedFat": 0.2,
+                    "carbohydrate": 38,
+                    "ofSugar": 2,
+                    "fibre": 9.1,
+                    "protein": 5.2,
+                    "salt": 1.2
+                }
+            },
+            "63144": {
+                "price": 25.5,
+                "name": "signaturbrød",
+                "subName": "gillelejehavn",
+                "grams": 750,
+                "nutrionalValues": {
+                    "energy": 214,
+                    "fat": 4.7,
+                    "ofSaturatedFat": 0.6,
+                    "carbohydrate": 32,
+                    "ofSugar": 2,
+                    "fibre": 9,
+                    "protein": 6.4,
+                    "salt": 1.6
+                }
+            }
+        },
+        "fast-food-brod": {
+            "60119": {
+                "price": 17.75,
+                "name": "briochehotdogbrød",
+                "subName": "rema1000",
+                "grams": 360,
+                "nutrionalValues": {
+                    "energy": 311,
+                    "fat": 6,
+                    "ofSaturatedFat": 1.9,
+                    "carbohydrate": 52,
+                    "ofSugar": 9.2,
+                    "fibre": 2.4,
+                    "protein": 11,
+                    "salt": 1.1
+                }
+            },
+            "60120": {
+                "price": 17.75,
+                "name": "briocheburgerbolle",
+                "subName": "rema1000",
+                "grams": 360,
+                "nutrionalValues": {
+                    "energy": 299,
+                    "fat": 6,
+                    "ofSaturatedFat": 2,
+                    "carbohydrate": 50,
+                    "ofSugar": 9.3,
+                    "fibre": 2.3,
+                    "protein": 10,
+                    "salt": 1.1
+                }
+            },
+            "60125": {
+                "price": 28,
+                "name": "pitabrød",
+                "subName": "bfree",
+                "grams": 220,
+                "nutrionalValues": {
+                    "energy": 214,
+                    "fat": 1.8,
+                    "ofSaturatedFat": 0.4,
+                    "carbohydrate": 40,
+                    "ofSugar": 4.8,
+                    "fibre": 10,
+                    "protein": 4.9,
+                    "salt": 0.9
+                }
+            },
+            "60130": {
+                "price": 16.5,
+                "name": "pitabrød",
+                "subName": "napoli",
+                "grams": 500,
+                "nutrionalValues": {
+                    "energy": 262,
+                    "fat": 1.3,
+                    "ofSaturatedFat": 0.2,
+                    "carbohydrate": 52,
+                    "ofSugar": 2.4,
+                    "fibre": 0.5,
+                    "protein": 9.4,
+                    "salt": 1.5
+                }
+            },
+            "60139": {
+                "price": 12,
+                "name": "naanbrød",
+                "subName": "hvidløgkoriander",
+                "grams": 260,
+                "nutrionalValues": {
+                    "energy": 303,
+                    "fat": 5.9,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 51,
+                    "ofSugar": 5.2,
+                    "fibre": 0.5,
+                    "protein": 10,
+                    "salt": 1.3
+                }
+            },
+            "61250": {
+                "price": 14.75,
+                "name": "burgerboller",
+                "subName": "rema1000",
+                "grams": 330,
+                "nutrionalValues": {
+                    "energy": 299,
+                    "fat": 6.3,
+                    "ofSaturatedFat": 1.9,
+                    "carbohydrate": 49,
+                    "ofSugar": 5.5,
+                    "fibre": 3,
+                    "protein": 10,
+                    "salt": 0.93
+                }
+            },
+            "61251": {
+                "price": 14.75,
+                "name": "storehotdogbrød",
+                "subName": "rema1000",
+                "grams": 360,
+                "nutrionalValues": {
+                    "energy": 307,
+                    "fat": 6.1,
+                    "ofSaturatedFat": 1.4,
+                    "carbohydrate": 52,
+                    "ofSugar": 6.6,
+                    "fibre": 2.2,
+                    "protein": 10,
+                    "salt": 0.77
+                }
+            },
+            "61255": {
+                "price": 14.75,
+                "name": "pølsebrød",
+                "subName": "rema1000",
+                "grams": 430,
+                "nutrionalValues": {
+                    "energy": 293,
+                    "fat": 4.2,
+                    "ofSaturatedFat": 1.7,
+                    "carbohydrate": 53,
+                    "ofSugar": 6.5,
+                    "fibre": 2.6,
+                    "protein": 9.6,
+                    "salt": 0.79
+                }
+            },
+            "64710": {
+                "price": 12.75,
+                "name": "franskhotdog",
+                "subName": "hatting",
+                "grams": 180,
+                "nutrionalValues": {
+                    "energy": 249,
+                    "fat": 1.3,
+                    "ofSaturatedFat": 0.3,
+                    "carbohydrate": 49,
+                    "ofSugar": 2,
+                    "fibre": 3,
+                    "protein": 8.7,
+                    "salt": 1.1
+                }
+            },
+            "66029": {
+                "price": 15,
+                "name": "originalburger",
+                "subName": "hatting",
+                "grams": 320,
+                "nutrionalValues": {
+                    "energy": 294,
+                    "fat": 5.3,
+                    "ofSaturatedFat": 0.5,
+                    "carbohydrate": 51,
+                    "ofSugar": 6.6,
+                    "fibre": 3.2,
+                    "protein": 9,
+                    "salt": 0.98
+                }
+            },
+            "66035": {
+                "price": 15,
+                "name": "fuldkornburger",
+                "subName": "hatting",
+                "grams": 320,
+                "nutrionalValues": {
+                    "energy": 260,
+                    "fat": 4.3,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 43,
+                    "ofSugar": 5,
+                    "fibre": 5.6,
+                    "protein": 9.6,
+                    "salt": 0.9
+                }
+            },
+            "66036": {
+                "price": 15,
+                "name": "briocheburger",
+                "subName": "hatting",
+                "grams": 320,
+                "nutrionalValues": {
+                    "energy": 317,
+                    "fat": 8.9,
+                    "ofSaturatedFat": 1,
+                    "carbohydrate": 49,
+                    "ofSugar": 7.1,
+                    "fibre": 2.5,
+                    "protein": 9,
+                    "salt": 1.2
+                }
+            },
+            "66039": {
+                "price": 15,
+                "name": "briochehotdog",
+                "subName": "hatting",
+                "grams": 250,
+                "nutrionalValues": {
+                    "energy": 317,
+                    "fat": 8.1,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 51,
+                    "ofSugar": 7.2,
+                    "fibre": 2.5,
+                    "protein": 9,
+                    "salt": 1.1
+                }
+            },
+            "66050": {
+                "price": 10,
+                "name": "pitabrød",
+                "subName": "hvede",
+                "grams": 380,
+                "nutrionalValues": {
+                    "energy": 257,
+                    "fat": 1.2,
+                    "ofSaturatedFat": 0.3,
+                    "carbohydrate": 50,
+                    "ofSugar": 3.3,
+                    "fibre": 2.2,
+                    "protein": 10,
+                    "salt": 0.1
+                }
+            },
+            "66052": {
+                "price": 10,
+                "name": "pitabrød",
+                "subName": "fuldkorn",
+                "grams": 380,
+                "nutrionalValues": {
+                    "energy": 254,
+                    "fat": 1.1,
+                    "ofSaturatedFat": 0.3,
+                    "carbohydrate": 48,
+                    "ofSugar": 2.4,
+                    "fibre": 6.2,
+                    "protein": 11,
+                    "salt": 0.1
+                }
+            }
+        },
+        "bavinchi-bager": {
+            "360565": {
+                "price": 25,
+                "name": "hindbærsnitter",
+                "subName": "bavinchi4stk",
+                "grams": 250,
+                "nutrionalValues": {
+                    "energy": 391,
+                    "fat": 12,
+                    "ofSaturatedFat": 4.7,
+                    "carbohydrate": 66,
+                    "ofSugar": 47,
+                    "fibre": 1.1,
+                    "protein": 3.8,
+                    "salt": 0.14
+                }
+            },
+            "360577": {
+                "price": 25,
+                "name": "makronsnitter",
+                "subName": "bavinchi4stk",
+                "grams": 220,
+                "nutrionalValues": {
+                    "energy": 394,
+                    "fat": 17,
+                    "ofSaturatedFat": 5.7,
+                    "carbohydrate": 55,
+                    "ofSugar": 41,
+                    "fibre": 1.9,
+                    "protein": 4.4,
+                    "salt": 0.43
+                }
+            },
+            "360612": {
+                "price": 12,
+                "name": "minipizza",
+                "subName": "bavinchim",
+                "grams": 85,
+                "nutrionalValues": {
+                    "energy": 232,
+                    "fat": 6.9,
+                    "ofSaturatedFat": 3.1,
+                    "carbohydrate": 31,
+                    "ofSugar": 1.3,
+                    "fibre": 1.5,
+                    "protein": 10,
+                    "salt": 1.3
+                }
+            },
+            "360624": {
+                "price": 30,
+                "name": "trøfler",
+                "subName": "bavinchi4stk",
+                "grams": 290,
+                "nutrionalValues": {
+                    "energy": 356,
+                    "fat": 16,
+                    "ofSaturatedFat": 7.4,
+                    "carbohydrate": 47,
+                    "ofSugar": 30,
+                    "fibre": 2.5,
+                    "protein": 3.9,
+                    "salt": 0.4
+                }
+            },
+            "360700": {
+                "price": 26,
+                "name": "solsikkerugbrød",
+                "subName": "bavinchi",
+                "grams": 800,
+                "nutrionalValues": {
+                    "energy": 264,
+                    "fat": 8.9,
+                    "ofSaturatedFat": 1.2,
+                    "carbohydrate": 34,
+                    "ofSugar": 2.9,
+                    "fibre": 6.2,
+                    "protein": 8.2,
+                    "salt": 0.97
+                }
+            },
+            "360715": {
+                "price": 25,
+                "name": "mormorbrød",
+                "subName": "bavinchi",
+                "grams": 515,
+                "nutrionalValues": {
+                    "energy": 245,
+                    "fat": 2.6,
+                    "ofSaturatedFat": 0.7,
+                    "carbohydrate": 45,
+                    "ofSugar": 2.6,
+                    "fibre": 3.1,
+                    "protein": 8,
+                    "salt": 1.9
+                }
+            },
+            "360720": {
+                "price": 20,
+                "name": "trekornsbrød",
+                "subName": "bavinchi",
+                "grams": 515,
+                "nutrionalValues": {
+                    "energy": 246,
+                    "fat": 3.6,
+                    "ofSaturatedFat": 0.5,
+                    "carbohydrate": 43,
+                    "ofSugar": 0.5,
+                    "fibre": 3.4,
+                    "protein": 9.1,
+                    "salt": 1.4
+                }
+            },
+            "360726": {
+                "price": 20,
+                "name": "formbrød",
+                "subName": "bavinchimedbirkes",
+                "grams": 536,
+                "nutrionalValues": {
+                    "energy": 257,
+                    "fat": 3.1,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 47,
+                    "ofSugar": 0.5,
+                    "fibre": 2.6,
+                    "protein": 8.6,
+                    "salt": 1.4
+                }
+            },
+            "360729": {
+                "price": 14,
+                "name": "mørkbaguette",
+                "subName": "bavinchi",
+                "grams": 300,
+                "nutrionalValues": {
+                    "energy": 239,
+                    "fat": 3.2,
+                    "ofSaturatedFat": 0.5,
+                    "carbohydrate": 42,
+                    "ofSugar": 1.4,
+                    "fibre": 3.4,
+                    "protein": 8.9,
+                    "salt": 1.6
+                }
+            },
+            "360730": {
+                "price": 14,
+                "name": "lysbaguette",
+                "subName": "bavinchi",
+                "grams": 285,
+                "nutrionalValues": {
+                    "energy": 239,
+                    "fat": 3.6,
+                    "ofSaturatedFat": 1.1,
+                    "carbohydrate": 42,
+                    "ofSugar": 0.9,
+                    "fibre": 2,
+                    "protein": 8.1,
+                    "salt": 1.4
+                }
+            },
+            "360735": {
+                "price": 3,
+                "name": "skagenstykke",
+                "subName": "bavinchifuldkorn",
+                "grams": 60,
+                "nutrionalValues": {
+                    "energy": 276,
+                    "fat": 6.6,
+                    "ofSaturatedFat": 1,
+                    "carbohydrate": 42,
+                    "ofSugar": 1.8,
+                    "fibre": 3.3,
+                    "protein": 10,
+                    "salt": 1.7
+                }
+            },
+            "360738": {
+                "price": 3,
+                "name": "håndværker",
+                "subName": "bavinchi",
+                "grams": 45,
+                "nutrionalValues": {
+                    "energy": 242,
+                    "fat": 3.2,
+                    "ofSaturatedFat": 0.6,
+                    "carbohydrate": 42,
+                    "ofSugar": 0.7,
+                    "fibre": 3,
+                    "protein": 8.7,
+                    "salt": 1.5
+                }
+            },
+            "360744": {
+                "price": 6.5,
+                "name": "grovbirkes",
+                "subName": "bavinchi",
+                "grams": 85,
+                "nutrionalValues": {
+                    "energy": 382,
+                    "fat": 24,
+                    "ofSaturatedFat": 8.5,
+                    "carbohydrate": 33,
+                    "ofSugar": 0.8,
+                    "fibre": 3.5,
+                    "protein": 8.7,
+                    "salt": 1.1
+                }
+            },
+            "360751": {
+                "price": 32,
+                "name": "kanelstang",
+                "subName": "bavinchihvidglasur",
+                "grams": 370,
+                "nutrionalValues": {
+                    "energy": 309,
+                    "fat": 9.8,
+                    "ofSaturatedFat": 2.6,
+                    "carbohydrate": 49,
+                    "ofSugar": 22,
+                    "fibre": 1.3,
+                    "protein": 5.3,
+                    "salt": 0.75
+                }
+            },
+            "360758": {
+                "price": 3,
+                "name": "spanskstykke",
+                "subName": "bavinchi",
+                "grams": 45,
+                "nutrionalValues": {
+                    "energy": 245,
+                    "fat": 1.5,
+                    "ofSaturatedFat": 0.4,
+                    "carbohydrate": 47,
+                    "ofSugar": 0.6,
+                    "fibre": 2.1,
+                    "protein": 9,
+                    "salt": 1.5
+                }
+            },
+            "360759": {
+                "price": 3,
+                "name": "trekornsstykke",
+                "subName": "bavinchi",
+                "grams": 60,
+                "nutrionalValues": {
+                    "energy": 260,
+                    "fat": 5.7,
+                    "ofSaturatedFat": 0.8,
+                    "carbohydrate": 41,
+                    "ofSugar": 0.5,
+                    "fibre": 4.3,
+                    "protein": 9.8,
+                    "salt": 1.4
+                }
+            },
+            "360764": {
+                "price": 10,
+                "name": "cremesnegl",
+                "subName": "bavinchi",
+                "grams": 95,
+                "nutrionalValues": {
+                    "energy": 406,
+                    "fat": 25,
+                    "ofSaturatedFat": 9.9,
+                    "carbohydrate": 41,
+                    "ofSugar": 20,
+                    "fibre": 0.9,
+                    "protein": 4.3,
+                    "salt": 0.55
+                }
+            },
+            "360770": {
+                "price": 10,
+                "name": "kanelsnegl",
+                "subName": "bavinchi",
+                "grams": 105,
+                "nutrionalValues": {
+                    "energy": 422,
+                    "fat": 25,
+                    "ofSaturatedFat": 9.9,
+                    "carbohydrate": 45,
+                    "ofSugar": 25,
+                    "fibre": 1.1,
+                    "protein": 4.3,
+                    "salt": 0.53
+                }
+            },
+            "360772": {
+                "price": 10,
+                "name": "tebirkes",
+                "subName": "bavinchi",
+                "grams": 86,
+                "nutrionalValues": {
+                    "energy": 417,
+                    "fat": 28,
+                    "ofSaturatedFat": 11,
+                    "carbohydrate": 34,
+                    "ofSugar": 11,
+                    "fibre": 2.2,
+                    "protein": 6,
+                    "salt": 0.58
+                }
+            },
+            "360776": {
+                "price": 10,
+                "name": "spandauer",
+                "subName": "bavinchimedcreme",
+                "grams": 94,
+                "nutrionalValues": {
+                    "energy": 363,
+                    "fat": 21,
+                    "ofSaturatedFat": 8.6,
+                    "carbohydrate": 39,
+                    "ofSugar": 19,
+                    "fibre": 0.8,
+                    "protein": 4.2,
+                    "salt": 0.51
+                }
+            },
+            "360790": {
+                "price": 14,
+                "name": "focaccia",
+                "subName": "bavinchim",
+                "grams": 300,
+                "nutrionalValues": {
+                    "energy": 228,
+                    "fat": 2.6,
+                    "ofSaturatedFat": 0.5,
+                    "carbohydrate": 42,
+                    "ofSugar": 0.9,
+                    "fibre": 1.9,
+                    "protein": 7.9,
+                    "salt": 2.1
+                }
+            },
+            "360809": {
+                "price": 3.75,
+                "name": "tebolle",
+                "subName": "bavinchi",
+                "grams": 46,
+                "nutrionalValues": {
+                    "energy": 290,
+                    "fat": 6.3,
+                    "ofSaturatedFat": 2.6,
+                    "carbohydrate": 48,
+                    "ofSugar": 7.1,
+                    "fibre": 1.9,
+                    "protein": 8.7,
+                    "salt": 1.2
+                }
+            },
+            "360819": {
+                "price": 12,
+                "name": "pølsehorn",
+                "subName": "bavinchi",
+                "grams": 70,
+                "nutrionalValues": {
+                    "energy": 316,
+                    "fat": 14,
+                    "ofSaturatedFat": 5.9,
+                    "carbohydrate": 35,
+                    "ofSugar": 5.2,
+                    "fibre": 1.3,
+                    "protein": 10,
+                    "salt": 1.8
+                }
+            },
+            "360849": {
+                "price": 14,
+                "name": "minipizza",
+                "subName": "bavinchim",
+                "grams": 86,
+                "nutrionalValues": {
+                    "energy": 272,
+                    "fat": 11,
+                    "ofSaturatedFat": 4.7,
+                    "carbohydrate": 31,
+                    "ofSugar": 0.9,
+                    "fibre": 1.3,
+                    "protein": 12,
+                    "salt": 1.6
+                }
+            },
+            "360853": {
+                "price": 6.5,
+                "name": "gulerodsbolle",
+                "subName": "75GR",
+                "grams": 75,
+                "nutrionalValues": {
+                    "energy": 302,
+                    "fat": 10,
+                    "ofSaturatedFat": 1.3,
+                    "carbohydrate": 43,
+                    "ofSugar": 8.3,
+                    "fibre": 2.5,
+                    "protein": 8.4,
+                    "salt": 0.89
+                }
+            },
+            "360867": {
+                "price": 10,
+                "name": "pizzasnegl",
+                "subName": "bavinchi",
+                "grams": 95,
+                "nutrionalValues": {
+                    "energy": 236,
+                    "fat": 6.6,
+                    "ofSaturatedFat": 3,
+                    "carbohydrate": 34,
+                    "ofSugar": 0.9,
+                    "fibre": 2,
+                    "protein": 9.4,
+                    "salt": 1.4
+                }
+            }
+        }
+    },
+    "Nemt & hurtigt": {
+        "link": "https://shop.rema1000.dk/nemt-hurtigt"
+    },
+    "Kød, fisk & fjerkræ": {
+        "link": "https://shop.rema1000.dk/kod-fisk-fjerkrae"
+    },
+    "Køl": {
+        "link": "https://shop.rema1000.dk/kol"
+    },
+    "Ost m.v.": {
+        "link": "https://shop.rema1000.dk/ost-mv"
+    },
+    "Frost": {
+        "link": "https://shop.rema1000.dk/frost"
+    },
+    "Mejeri": {
+        "link": "https://shop.rema1000.dk/mejeri"
+    },
+    "Kolonial": {
+        "link": "https://shop.rema1000.dk/kolonial"
+    },
+    "Drikkevarer": {
+        "link": "https://shop.rema1000.dk/drikkevarer"
+    },
+    "Slik": {
+        "link": "https://shop.rema1000.dk/slik"
+    }
+}
